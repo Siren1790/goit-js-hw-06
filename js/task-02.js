@@ -12,8 +12,6 @@ const ingredients = [
 // 3. Додасть елементу клас item.
 // 4. Після чого, вставить усі <li> за одну операцію у список ul#ingredients.
 
-// let ulIngredients = document.querySelector("#ingredients");
-
 for (let i = 0; i < ingredients.length; i++){  
   let li = document.createElement("li");
   li.textContent = ingredients[i];

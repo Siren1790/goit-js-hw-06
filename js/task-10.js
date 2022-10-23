@@ -28,7 +28,7 @@ function createBoxes(amount) {
   divBoxesRef.append(...arrDivs);
 }
 
-function destroyDivs() {
+function destroyBoxes() {
   document.querySelector("#boxes").innerHTML = "";
 }
 
@@ -37,4 +37,4 @@ createBtnRef.addEventListener("click", e => {
   createBoxes(value);
 });
 
-destroyBtn.addEventListener("click", destroyDivs);
+destroyBtn.addEventListener("click", destroyBoxes);

@@ -7,7 +7,6 @@
 // Для додавання стилів використовуй CSS-класи valid і invalid, які ми вже додали у вихідні файли завдання.
 
 const input = document.querySelector("#validation-input");
-input.style.outline = "0"; // Видалив підсвічування input
 
 const userName = () => {
    input.classList.add("invalid"); //Додав красну підсвітку
@@ -16,4 +15,4 @@ const userName = () => {
    } 
 }
 
-input.addEventListener("keyup", userName);
+input.addEventListener("blur", userName);
